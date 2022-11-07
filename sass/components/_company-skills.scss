@@ -1,0 +1,40 @@
+.section.soft-skills {
+  padding-bottom: 0px;
+}
+
+.skills {
+  display: flex;
+  gap: 30px;
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+
+    color: $head-color;
+  }
+
+  &__description {
+    line-height: 171%;
+    letter-spacing: 0.03em;
+  }
+
+  &__inner-wrap {
+    @include centeredFlex();
+
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: $button-filter-color;
+  }
+
+  &__icon {
+    height: 70px;
+    width: 70px;
+  }
+}

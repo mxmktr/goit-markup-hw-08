@@ -1,0 +1,43 @@
+.social-list {
+  @include centeredFlex();
+
+  margin: 0 auto;
+  gap: 10px;
+
+  &__link {
+    @include centeredFlex($flexType: inline-flex);
+
+    width: 44px;
+    height: 44px;
+
+    background-color: transparent;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: $logo-color;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: $main-social-icon-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social-list__link:hover & {
+      fill: $white-color;
+    }
+  }
+}
+
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
+  fill: $white-color;
+}

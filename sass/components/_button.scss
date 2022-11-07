@@ -1,0 +1,145 @@
+%buttonBorderFormat {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+%mainButtonFormat {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+}
+
+%mainButtonTextFormat {
+  color: $white-color;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+}
+
+.hero__button {
+  @extend %mainButtonFormat;
+
+  @extend %buttonBorderFormat;
+
+  @extend %mainButtonTextFormat;
+
+  background-color: $logo-color;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-active-color;
+  }
+}
+
+.filter-list__button {
+  padding: 6px 22px;
+
+  @extend %buttonBorderFormat;
+
+  background-color: $button-filter-color;
+
+  color: $head-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 163%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $logo-color;
+    color: $white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal__btn {
+  @extend %mainButtonFormat;
+
+  padding: 10px 52px;
+
+  background-color: $logo-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  @extend %mainButtonTextFormat;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-active-color;
+  }
+}
+
+.close-btn {
+  @include centeredFlex;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  background-color: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .close-btn:hover & {
+      fill: $logo-color;
+    }
+  }
+}
+
+.email-btn {
+  @include horizontalCenteredFlex($flexType: inline-flex);
+
+  margin-left: 12px;
+  padding: 10px 28px;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: $logo-color;
+
+  cursor: pointer;
+
+  @extend %mainButtonTextFormat;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-active-color;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
