@@ -470,6 +470,9 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__logo {
+  margin-right: 93px;
+}
 
 .navigation-header,
 .nav-list,
@@ -490,7 +493,6 @@ textarea {
 }
 
 .logo {
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -874,20 +876,19 @@ textarea {
 .footer {
   background: #2f303a;
   padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
+  /*     &__container {
+      display: flex;
+      align-items: baseline;
+  } */
 }
 
 .address-box {
-  margin-right: 70px;
+  /* margin-right: 70px; */
+}
+@media screen and (max-width: 767px) {
+  .address-box {
+    text-align: center;
+  }
 }
 
 .address {
@@ -916,13 +917,19 @@ textarea {
 }
 
 .strong {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .strong {
+    display: block;
+    text-align: center;
+  }
 }
 
 .filter-list {

@@ -2,16 +2,17 @@
     background: $full-page-color;
     padding: 60px 0;
 
-    &__container {
-        @include desktop {
-            display: flex;
-            align-items: baseline;
-        }
-    }
+    /*     &__container {
+        display: flex;
+        align-items: baseline;
+    } */
 }
 
 .address-box {
-    margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+    /* margin-right: 70px; */
 }
 
 .address {
@@ -48,7 +49,12 @@
 }
 
 .strong {
-    display: inline-block;
+    @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+    }
+
+    display: block;
     margin-bottom: 20px;
 
     color: $white-color;
