@@ -1,5 +1,9 @@
 .section.soft-skills {
-    padding-bottom: 0px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-bottom: 0px;
+    }
 }
 
 .skills {
