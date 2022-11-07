@@ -270,13 +270,33 @@ html {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .container {
-  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -647,7 +667,19 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .skills__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .skills__title {
   margin-bottom: 10px;
@@ -679,6 +711,12 @@ textarea {
 .skills__icon {
   height: 70px;
   width: 70px;
+}
+
+@media screen and (max-width: 1199px) {
+  .job-description-section {
+    display: none;
+  }
 }
 
 .job-list {

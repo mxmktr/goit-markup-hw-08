@@ -6,66 +6,82 @@ h5,
 h6,
 p,
 ul {
-  margin: 0;
+    margin: 0;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 body,
 html {
-  margin: 0;
-  color: $text-color;
-  font-family: $main-font;
-  font-size: 14px;
+    margin: 0;
+    color: $text-color;
+    font-family: $main-font;
+    font-size: 14px;
 }
 
 .section {
-  padding: 94px 0px;
+    padding: 60px 0px;
+
+    @include desktop {
+        padding: 94px 0px;
+    }
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include mobile {
+        width: 480px;
+    }
+
+    @include tablet {
+        width: 768px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .title {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 117%;
-  letter-spacing: 0.03em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 117%;
+    letter-spacing: 0.03em;
 
-  color: $head-color;
+    color: $head-color;
 }
 
 input,
 button,
 textarea {
-  padding: 0;
-  border: none;
-  outline: none;
+    padding: 0;
+    border: none;
+    outline: none;
 }
