@@ -1,52 +1,65 @@
 .email-form {
-  margin-left: auto;
+    margin-left: auto;
 
-  &__label {
-    display: block;
-    margin-bottom: 20px;
+    &__label {
+        display: block;
+        margin-bottom: 20px;
 
-    color: $white-color;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-  }
-
-  &__inner-wrap {
-    @include horizontalCenteredFlex();
-  }
-
-  &__input {
-    background-color: transparent;
-    padding: 15px 0px 15px 16px;
-    width: 358px;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    &::placeholder {
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: 0.03em;
-
-      color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        color: $white-color;
     }
 
-    &:placeholder-shown,
-    &:invalid {
-      border: 1px solid rgba(255, 255, 255, 0.3);
+    &__inner-wrap {
+        @include desktop {
+            @include horizontalCenteredFlex();
+        }
     }
 
-    &:not(:placeholder-shown) {
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: 0.03em;
+    &__input {
+        background-color: transparent;
+        padding: 15px 0px 15px 16px;
 
-      color: rgba(255, 255, 255, 0.6);
-    }
+        @media screen and (max-width: 1199px) {
+            display: block;
+            margin: 0 auto;
 
-    &:not(:placeholder-shown):valid {
-      border: 1px solid $logo-color;
+            margin-bottom: 20px;
+
+            width: 450px;
+        }
+
+        width: 358px;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:placeholder-shown,
+        &:invalid {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        &:not(:placeholder-shown) {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:not(:placeholder-shown):valid {
+            border: 1px solid $logo-color;
+        }
     }
-  }
 }
