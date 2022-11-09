@@ -902,15 +902,36 @@ textarea {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-address-connect-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .address-box {
     margin-bottom: 60px;
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .address-box {
+    margin-right: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .address-box {
+    text-align: left;
     margin-right: 70px;
+    margin-bottom: 0px;
   }
 }
 
@@ -947,7 +968,7 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .strong {
     text-align: center;
   }
@@ -1250,6 +1271,11 @@ textarea {
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .email-form__label {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email-form__inner-wrap {

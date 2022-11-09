@@ -16,6 +16,14 @@
     margin-bottom: 20px;
 }
 
+.footer-address-connect-box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
 .address-box {
     @include mobile {
         margin-bottom: 60px;
@@ -23,8 +31,14 @@
         text-align: center;
     }
 
+    @include tablet {
+        margin-right: 165px;
+    }
+
     @include desktop {
+        text-align: left;
         margin-right: 70px;
+        margin-bottom: 0px;
     }
 }
 
@@ -58,7 +72,7 @@
 }
 
 .strong {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
 

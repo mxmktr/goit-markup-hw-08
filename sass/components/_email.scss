@@ -11,6 +11,10 @@
         line-height: 1.1;
         letter-spacing: 0.03em;
         color: $white-color;
+
+        @include desktop {
+            text-align: left;
+        }
     }
 
     &__inner-wrap {
