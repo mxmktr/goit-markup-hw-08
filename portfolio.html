@@ -1,437 +1,540 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>WebStudio - портфоліо веб студії - приклади робіт</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <!-- Main site navigation and main contact references -->
-      <div class="container header__container">
-        <nav class="navigation-header">
-          <a
-            href="./index.html"
-            title="Логотип компанії"
-            id="top-logo"
-            lang="en"
-            class="logo"
-            >Web<span class="logo__span">Studio</span></a
-          >
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a
-                href="./index.html"
-                title="WebStudio - основна сторінка"
-                class="nav-list__link"
-                >Студія</a
-              >
-              <div class="active-link-hover"></div>
-            </li>
-            <li class="nav-list__item">
-              <a
-                href="./portfolio.html"
-                title="WebStudio - приклади виконаних робіт"
-                class="nav-list__link nav-list__link--active"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav-list__item">
-              <a
-                href="contacts.html"
-                title="WebStudio - основні контакти"
-                class="nav-list__link"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a
-              href="mailto:info@devstudio.com"
-              title="Контактний ємейл"
-              class="contact-list__link"
-              lang="en"
-              ><svg class="contact-list__icon">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list__item">
-            <a
-              href="tel:+380961111111"
-              title="Контактний номер телефону"
-              class="contact-list__link"
-              ><svg class="contact-list__icon">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 (096) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <!--Company portfolio -->
-      <section class="section">
-        <div class="container">
-          <h1 class="visually-hidden">Портфоліо веб студії</h1>
-          <ul class="filter-list">
-            <li class="filter-list__item">
-              <button
-                class="button filter-list__button"
-                type="button"
-                title="Вибір усіх проектів"
-              >
-                Усі
-              </button>
-            </li>
-            <li class="filter-list__item">
-              <button
-                class="button filter-list__button"
-                type="button"
-                title="Вибір проектів типу веб-сайт"
-              >
-                Веб-сайти
-              </button>
-            </li>
-            <li class="filter-list__item">
-              <button
-                class="button filter-list__button"
-                type="button"
-                title="Вибір проектів типу додатки"
-              >
-                Додатки
-              </button>
-            </li>
-            <li class="filter-list__item">
-              <button
-                class="button filter-list__button"
-                type="button"
-                title="Вибір проектів типу дизайн"
-              >
-                Дизайн
-              </button>
-            </li>
-            <li class="filter-list__item">
-              <button
-                class="button filter-list__button"
-                type="button"
-                title="Вибір проектів типу маркетинг"
-              >
-                Маркетинг
-              </button>
-            </li>
-          </ul>
-          <ul class="examples-list">
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio1.jpg"
-                  alt="Приклад сайту Технокряк"
-                  width="370"
-                  title="Приклад сайту Технокряк"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">Технокряк</h2>
-                <p class="examples-list__type">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio2.jpg"
-                  alt="Приклад постеру"
-                  width="370"
-                  title="Два баскетболісти у грі"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Постер
-                  <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="examples-list__type">Дизайн</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio3.jpg"
-                  alt="Приклад додатку"
-                  width="370"
-                  title="сіфуд рибний ресторан"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Ресторан
-                  <span lang="en">Seafood</span>
-                </h2>
-                <p class="examples-list__type">Додаток</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio4.jpg"
-                  alt="Приклад маркетинг проекту"
-                  width="370"
-                  title="навушники проект Прайм"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Проект
-                  <span lang="en">Prime</span>
-                </h2>
-                <p class="examples-list__type">Маркетинг</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio5.jpg"
-                  alt="Приклад додатку"
-                  width="370"
-                  title="коробки проект боксес"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Проект
-                  <span lang="en">Boxes</span>
-                </h2>
-                <p class="examples-list__type">Додаток</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio6.jpg"
-                  alt="Приклад вебсайту"
-                  width="370"
-                  title="Натхнення не має кордонів"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  <span lang="en">Inspiration has no Borders</span>
-                </h2>
-                <p class="examples-list__type">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio7.jpg"
-                  alt="Приклад постеру"
-                  width="370"
-                  title="Натхнення не має кордонів"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Видання
-                  <span lang="en">Limited Edition</span>
-                </h2>
-                <p class="examples-list__type">Дизайн</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio8.jpg"
-                  alt="Проект ЛАБ"
-                  width="370"
-                  title="Приклад маркетингового проекту ЛАБ"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  Проект
-                  <span lang="en">LAB</span>
-                </h2>
-                <p class="examples-list__type">Маркетинг</p>
-              </div>
-            </li>
-            <li class="examples-list__item">
-              <div class="examples-list__wrapper">
-                <img
-                  class="examples-list__img"
-                  src="./images/portfolio9.jpg"
-                  alt="Проект зростаючий бізнес"
-                  width="370"
-                  title="Приклад бізнес додатку"
-                />
-                <p class="examples-list__description">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div>
-              <div class="examples-list__container">
-                <h2 class="examples-list__name">
-                  <span lang="en">Growing Business</span>
-                </h2>
-                <p class="examples-list__type">Додаток</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!-- address + contact information -->
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="address-box">
-          <a href="#top-logo" title="Логотип компанії" lang="en" class="logo"
-            >Web<span class="logo__span logo__span--bottom">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address-list">
-              <li class="address-list__item">
-                м. Київ, пр-т Лесі Українки, 26
-              </li>
-              <li class="address-list__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  title="Контактний ємейл"
-                  class="address-list__link"
-                  lang="en"
-                  >info@devstudio.com</a
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>WebStudio - портфоліо веб студії - приклади робіт</title>
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <nav class="navigation-header">
+                    <a
+                        href="./index.html"
+                        title="Логотип компанії"
+                        id="top-logo"
+                        lang="en"
+                        class="logo header__logo"
+                        >Web<span class="logo__span">Studio</span></a
+                    >
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a
+                                href="./index.html"
+                                title="WebStudio - основна сторінка"
+                                class="nav-list__link"
+                                >Студія</a
+                            >
+                            <div class="active-link-hover"></div>
+                        </li>
+                        <li class="nav-list__item">
+                            <a
+                                href="./portfolio.html"
+                                title="WebStudio - приклади виконаних робіт"
+                                class="nav-list__link nav-list__link--active"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li class="nav-list__item">
+                            <a
+                                href="contacts.html"
+                                title="WebStudio - основні контакти"
+                                class="nav-list__link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contact-list">
+                    <li class="contact-list__item">
+                        <a
+                            href="mailto:info@devstudio.com"
+                            title="Контактний ємейл"
+                            class="contact-list__link"
+                            lang="en"
+                            ><svg class="contact-list__icon">
+                                <use href="./images/icons.svg#icon-mail"></use></svg
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="contact-list__item">
+                        <a
+                            href="tel:+380961111111"
+                            title="Контактний номер телефону"
+                            class="contact-list__link"
+                            ><svg class="contact-list__icon">
+                                <use href="./images/icons.svg#icon-smartphone"></use></svg
+                            >+38 (096) 111-11-11</a
+                        >
+                    </li>
+                </ul>
+
+                <button
+                    type="button"
+                    class="mobile-menu-btn menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
                 >
-              </li>
-              <li class="address-list__item">
-                <a
-                  href="tel:+380961111111"
-                  title="Контактний номер телефону"
-                  class="address-list__link"
-                  >+38 (096) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="connect-box">
-          <strong class="strong">приєднуйтесь</strong>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a
-                href=""
-                title="instagram"
-                class="social-list__link footer__social-link"
-                ><svg class="social-list__icon footer__social-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a
-                href=""
-                title="twitter"
-                class="social-list__link footer__social-link"
-                ><svg class="social-list__icon footer__social-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a
-                href=""
-                title="facebook"
-                class="social-list__link footer__social-link"
-                ><svg class="social-list__icon footer__social-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social-list__item">
-              <a
-                href=""
-                title="linkedin"
-                class="social-list__link footer__social-link"
-                ><svg class="social-list__icon footer__social-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <form class="form email-form">
-          <label for="email" class="email-form__label"
-            >Підпишіться на розсилку</label
-          >
-          <div class="email-form__inner-wrap">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="email-form__input"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="email-btn">
-              Підписатися
-              <svg class="email-btn__icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
-    </footer>
-  </body>
+                    <svg class="mobile-menu-btn__icon">
+                        <use href="./images/icons.svg#mobile-menu"></use>
+                    </svg>
+                </button>
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <div class="mobile-menu-wrap">
+                        <button class="mobile-menu-btn-cls menu-toggle js-close-menu" type="button">
+                            <svg class="menu-toggle mobile-menu-btn-cls__icon">
+                                <use href="./images/icons.svg#mobile-close"></use>
+                            </svg>
+                        </button>
+
+                        <div class="mobile-link-wrap">
+                            <ul class="mobile-nav-list">
+                                <li class="mobile-nav-list__item">
+                                    <a
+                                        href="./index.html"
+                                        title="WebStudio - основна сторінка"
+                                        class="mobile-nav-list__link nav-list__link--active"
+                                        >Студія</a
+                                    >
+                                    <div class="active-link-hover"></div>
+                                </li>
+                                <li class="mobile-nav-list__item">
+                                    <a
+                                        href="./portfolio.html"
+                                        title="WebStudio - приклади виконаних робіт"
+                                        class="mobile-nav-list__link"
+                                        >Портфоліо</a
+                                    >
+                                </li>
+                                <li class="mobile-nav-list__item">
+                                    <a
+                                        href="contacts.html"
+                                        title="WebStudio - основні контакти"
+                                        class="mobile-nav-list__link"
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="contact-social-wrap">
+                                <ul class="mobile-contact-list">
+                                    <li class="mobile-contact-list__item">
+                                        <a
+                                            href="tel:+380961111111"
+                                            title="Контактний номер телефону"
+                                            class="mobile-contact-list__link"
+                                            >+38 (096) 111-11-11</a
+                                        >
+                                    </li>
+                                    <li class="mobile-contact-list__item">
+                                        <a
+                                            href="mailto:info@devstudio.com"
+                                            title="Контактний ємейл"
+                                            class="mobile-contact-list__link"
+                                            lang="en"
+                                            >info@devstudio.com</a
+                                        >
+                                    </li>
+                                </ul>
+
+                                <ul class="mobile-social-list">
+                                    <li class="mobile-social-list__item">
+                                        <a class="mobile-social-list__link" href="#" lang="en"
+                                            >Instagram</a
+                                        >
+                                    </li>
+                                    <li class="mobile-social-list__item">
+                                        <a class="mobile-social-list__link" href="#" lang="en"
+                                            >Twitter</a
+                                        >
+                                    </li>
+                                    <li class="mobile-social-list__item">
+                                        <a class="mobile-social-list__link" href="#" lang="en"
+                                            >Facebook</a
+                                        >
+                                    </li>
+                                    <li class="mobile-social-list__item">
+                                        <a class="mobile-social-list__link" href="#" lang="en"
+                                            >LinkedIn</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!--Company portfolio -->
+            <section class="section">
+                <div class="container">
+                    <h1 class="visually-hidden">Портфоліо веб студії</h1>
+                    <ul class="filter-list">
+                        <li class="filter-list__item">
+                            <button
+                                class="button filter-list__button"
+                                type="button"
+                                title="Вибір усіх проектів"
+                            >
+                                Усі
+                            </button>
+                        </li>
+                        <li class="filter-list__item">
+                            <button
+                                class="button filter-list__button"
+                                type="button"
+                                title="Вибір проектів типу веб-сайт"
+                            >
+                                Веб-сайти
+                            </button>
+                        </li>
+                        <li class="filter-list__item">
+                            <button
+                                class="button filter-list__button"
+                                type="button"
+                                title="Вибір проектів типу додатки"
+                            >
+                                Додатки
+                            </button>
+                        </li>
+                        <li class="filter-list__item">
+                            <button
+                                class="button filter-list__button"
+                                type="button"
+                                title="Вибір проектів типу дизайн"
+                            >
+                                Дизайн
+                            </button>
+                        </li>
+                        <li class="filter-list__item">
+                            <button
+                                class="button filter-list__button"
+                                type="button"
+                                title="Вибір проектів типу маркетинг"
+                            >
+                                Маркетинг
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="examples-list">
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio1.jpg"
+                                    alt="Приклад сайту Технокряк"
+                                    width="370"
+                                    title="Приклад сайту Технокряк"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">Технокряк</h2>
+                                <p class="examples-list__type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio2.jpg"
+                                    alt="Приклад постеру"
+                                    width="370"
+                                    title="Два баскетболісти у грі"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Постер
+                                    <span lang="en">New Orlean vs Golden Star</span>
+                                </h2>
+                                <p class="examples-list__type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio3.jpg"
+                                    alt="Приклад додатку"
+                                    width="370"
+                                    title="сіфуд рибний ресторан"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Ресторан
+                                    <span lang="en">Seafood</span>
+                                </h2>
+                                <p class="examples-list__type">Додаток</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio4.jpg"
+                                    alt="Приклад маркетинг проекту"
+                                    width="370"
+                                    title="навушники проект Прайм"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Проект
+                                    <span lang="en">Prime</span>
+                                </h2>
+                                <p class="examples-list__type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio5.jpg"
+                                    alt="Приклад додатку"
+                                    width="370"
+                                    title="коробки проект боксес"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Проект
+                                    <span lang="en">Boxes</span>
+                                </h2>
+                                <p class="examples-list__type">Додаток</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio6.jpg"
+                                    alt="Приклад вебсайту"
+                                    width="370"
+                                    title="Натхнення не має кордонів"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    <span lang="en">Inspiration has no Borders</span>
+                                </h2>
+                                <p class="examples-list__type">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio7.jpg"
+                                    alt="Приклад постеру"
+                                    width="370"
+                                    title="Натхнення не має кордонів"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Видання
+                                    <span lang="en">Limited Edition</span>
+                                </h2>
+                                <p class="examples-list__type">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio8.jpg"
+                                    alt="Проект ЛАБ"
+                                    width="370"
+                                    title="Приклад маркетингового проекту ЛАБ"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    Проект
+                                    <span lang="en">LAB</span>
+                                </h2>
+                                <p class="examples-list__type">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="examples-list__item">
+                            <div class="examples-list__wrapper">
+                                <img
+                                    class="examples-list__img"
+                                    src="./images/portfolio9.jpg"
+                                    alt="Проект зростаючий бізнес"
+                                    width="370"
+                                    title="Приклад бізнес додатку"
+                                />
+                                <p class="examples-list__description">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                                    функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                    вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                            </div>
+                            <div class="examples-list__container">
+                                <h2 class="examples-list__name">
+                                    <span lang="en">Growing Business</span>
+                                </h2>
+                                <p class="examples-list__type">Додаток</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- address + contact information -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer-address-connect-box">
+                    <div class="address-box">
+                        <a
+                            href="#top-logo"
+                            title="Логотип компанії"
+                            lang="en"
+                            class="logo footer__logo"
+                            >Web<span class="logo__span logo__span--bottom">Studio</span></a
+                        >
+                        <address class="address">
+                            <ul class="address-list">
+                                <li class="address-list__item">м. Київ, пр-т Лесі Українки, 26</li>
+                                <li class="address-list__item">
+                                    <a
+                                        href="mailto:info@devstudio.com"
+                                        title="Контактний ємейл"
+                                        class="address-list__link"
+                                        lang="en"
+                                        >info@devstudio.com</a
+                                    >
+                                </li>
+                                <li class="address-list__item">
+                                    <a
+                                        href="tel:+380961111111"
+                                        title="Контактний номер телефону"
+                                        class="address-list__link"
+                                        >+38 (096) 111-11-11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="connect-box">
+                        <strong class="strong">приєднуйтесь</strong>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a
+                                    href=""
+                                    title="instagram"
+                                    class="social-list__link footer__social-link"
+                                    ><svg class="social-list__icon footer__social-icon">
+                                        <use href="./images/icons.svg#icon-instagram"></use></svg
+                                ></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a
+                                    href=""
+                                    title="twitter"
+                                    class="social-list__link footer__social-link"
+                                    ><svg class="social-list__icon footer__social-icon">
+                                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                                ></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a
+                                    href=""
+                                    title="facebook"
+                                    class="social-list__link footer__social-link"
+                                    ><svg class="social-list__icon footer__social-icon">
+                                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                                ></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a
+                                    href=""
+                                    title="linkedin"
+                                    class="social-list__link footer__social-link"
+                                    ><svg class="social-list__icon footer__social-icon">
+                                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="form email-form">
+                    <label for="email" class="email-form__label">Підпишіться на розсилку</label>
+                    <div class="email-form__inner-wrap">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="email-form__input"
+                            placeholder="E-mail"
+                        />
+                        <button type="submit" class="email-btn">
+                            Підписатися
+                            <svg class="email-btn__icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
+    </body>
 </html>
