@@ -6,6 +6,9 @@
         min-width: 350px;
 
         background-color: $full-page-color;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         background-image: $bg-gradient, url(../../images/hero-img-mob.jpg);
 
@@ -14,8 +17,6 @@
         }
 
         /*we can not to add these properties*/
-        background-repeat: no-repeat;
-        background-position: center;
 
         @include tablet {
             background-image: $bg-gradient, url(../../images/hero-img-tab.jpg);
@@ -29,7 +30,7 @@
             max-width: 1600px;
             padding: 200px 0;
 
-            background-image: $bg-gradient, url(../images/hero-img.jpg);
+            background-image: $bg-gradient, url(../../images/hero-img.jpg);
 
             @include devicePixel_2 {
                 background-image: $bg-gradient, url(../../images/hero-img-2x.jpg);
