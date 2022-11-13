@@ -2,10 +2,6 @@
     &__container {
         padding: 118px 0;
 
-        @include desktop {
-            padding: 200px 0;
-        }
-
         max-width: 1600px;
         margin: 0 auto;
 
@@ -15,6 +11,10 @@
         /*we can not to add these properties*/
         background-repeat: no-repeat;
         background-position: center;
+
+        @include desktop {
+            padding: 200px 0;
+        }
     }
 
     &__title {

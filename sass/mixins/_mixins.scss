@@ -30,3 +30,14 @@
 @mixin widthCalc($quantity) {
     width: calc((100% - 30px * ($quantity - 1)) / $quantity);
 }
+
+@mixin devicePixel_2 {
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+            @content;
+        }
+    }
+}

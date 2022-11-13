@@ -23,13 +23,16 @@
     line-height: 188%;
 }
 
-.menu-toggle {
+.mobile-menu-btn {
     @include tablet {
         display: none;
     }
-}
 
-.mobile-menu-btn {
+    display: block;
+    padding: 10px 0px;
+
+    @extend %buttonBorderFormat;
+
     background-color: transparent;
     margin-left: auto;
 
@@ -40,6 +43,10 @@
 }
 
 .mobile-menu-btn-cls {
+    display: block;
+
+    @extend %buttonBorderFormat;
+
     &__icon {
         position: absolute;
         top: 10px;
