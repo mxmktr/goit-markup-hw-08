@@ -1,19 +1,39 @@
 .hero {
     &__container {
+        margin: 0 auto;
         padding: 118px 0;
 
-        max-width: 1600px;
-        margin: 0 auto;
+        min-width: 350px;
 
         background-color: $full-page-color;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero-img.jpg);
+
+        background-image: $bg-gradient, url(../../images/hero-img-mob.jpg);
+
+        @include devicePixel_2 {
+            background-image: $bg-gradient, url(../../images/hero-img-mob-2x.jpg);
+        }
+
         /*we can not to add these properties*/
         background-repeat: no-repeat;
         background-position: center;
 
+        @include tablet {
+            background-image: $bg-gradient, url(../../images/hero-img-tab.jpg);
+
+            @include devicePixel_2 {
+                background-image: $bg-gradient, url(../../images/hero-img-tab-2x.jpg);
+            }
+        }
+
         @include desktop {
+            max-width: 1600px;
             padding: 200px 0;
+
+            background-image: $bg-gradient, url(../images/hero-img.jpg);
+
+            @include devicePixel_2 {
+                background-image: $bg-gradient, url(../../images/hero-img-2x.jpg);
+            }
         }
     }
 

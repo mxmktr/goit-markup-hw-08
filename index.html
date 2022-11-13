@@ -330,6 +330,7 @@
                         <li class="job-list__item">
                             <img
                                 class="job-list__img"
+                                srcset="./images/box1.jpg 1x, ./images/box1_2x.jpg 2x"
                                 src="./images/box1.jpg"
                                 alt="Людина програмує"
                                 width="370"
@@ -340,6 +341,7 @@
                         <li class="job-list__item">
                             <img
                                 class="job-list__img"
+                                srcset="./images/box2.jpg 1x, ./images/box2_2x.jpg 2x"
                                 src="./images/box2.jpg"
                                 alt="Людина підбирає кращі варіанти реалізації"
                                 width="370"
@@ -350,6 +352,7 @@
                         <li class="job-list__item">
                             <img
                                 class="job-list__img"
+                                srcset="./images/box3.jpg 1x, ./images/box3_2x.jpg 2x"
                                 src="./images/box3.jpg"
                                 alt="Людина вибирає оптимальний набір кольорів"
                                 width="370"
@@ -366,13 +369,27 @@
                     <h2 class="title">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-list__item">
-                            <img
-                                class="team-list__img"
-                                src="./images/img1.jpg"
-                                alt="Ігор Дем'яненко, продукт дизайнер, фото"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/img1-tab.jpg 1x, ./images/img1-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="./images/img1-mob.jpg 1x, ./images/img1-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                />
+
+                                <img
+                                    class="team-list__img"
+                                    src="./images/img1.jpg"
+                                    alt="Ігор Дем'яненко, продукт дизайнер, фото"
+                                    width="270"
+                                />
+                            </picture>
                             <div class="team-list__container">
                                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                                 <p lang="en" class="team-list__position">Product Designer</p>
