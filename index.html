@@ -77,6 +77,87 @@
                         >
                     </li>
                 </ul>
+
+                <button
+                    type="button"
+                    class="mobile-menu-btn menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="mobile-menu-btn__icon">
+                        <use href="./images/icons.svg#mobile-menu"></use>
+                    </svg>
+                </button>
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="mobile-menu-btn-cls menu-toggle js-close-menu" type="button">
+                        <svg class="menu-toggle mobile-menu-btn-cls__icon">
+                            <use href="./images/icons.svg#mobile-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-list__item">
+                            <a
+                                href="./index.html"
+                                title="WebStudio - основна сторінка"
+                                class="mobile-nav-list__link nav-list__link--active"
+                                >Студія</a
+                            >
+                            <div class="active-link-hover"></div>
+                        </li>
+                        <li class="mobile-nav-list__item">
+                            <a
+                                href="./portfolio.html"
+                                title="WebStudio - приклади виконаних робіт"
+                                class="mobile-nav-list__link"
+                                >Портфоліо</a
+                            >
+                        </li>
+                        <li class="mobile-nav-list__item">
+                            <a
+                                href="contacts.html"
+                                title="WebStudio - основні контакти"
+                                class="mobile-nav-list__link"
+                                >Контакти</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="mobile-contact-list">
+                        <li class="mobile-contact-list__item">
+                            <a
+                                href="tel:+380961111111"
+                                title="Контактний номер телефону"
+                                class="mobile-contact-list__link"
+                                >+38 (096) 111-11-11</a
+                            >
+                        </li>
+                        <li class="mobile-contact-list__item">
+                            <a
+                                href="mailto:info@devstudio.com"
+                                title="Контактний ємейл"
+                                class="mobile-contact-list__link"
+                                lang="en"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-social-list">
+                        <li class="mobile-social-list__item">
+                            <a class="mobile-social-list__link" href="#" lang="en">Instagram</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a class="mobile-social-list__link" href="#" lang="en">Twitter</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a class="mobile-social-list__link" href="#" lang="en">Facebook</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a class="mobile-social-list__link" href="#" lang="en">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -604,5 +685,12 @@
             </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>
