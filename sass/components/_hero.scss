@@ -10,19 +10,19 @@
         background-size: cover;
         background-position: center;
 
-        background-image: $bg-gradient, url(../../images/hero-img-mob.jpg);
+        background-image: $bg-gradient, url(../images/hero-img-mob.jpg);
 
         @include devicePixel_2 {
-            background-image: $bg-gradient, url(../../images/hero-img-mob-2x.jpg);
+            background-image: $bg-gradient, url(../images/hero-img-mob-2x.jpg);
         }
 
         /*we can not to add these properties*/
 
         @include tablet {
-            background-image: $bg-gradient, url(../../images/hero-img-tab.jpg);
+            background-image: $bg-gradient, url(../images/hero-img-tab.jpg);
 
             @include devicePixel_2 {
-                background-image: $bg-gradient, url(../../images/hero-img-tab-2x.jpg);
+                background-image: $bg-gradient, url(../images/hero-img-tab-2x.jpg);
             }
         }
 
@@ -30,10 +30,10 @@
             max-width: 1600px;
             padding: 200px 0;
 
-            background-image: $bg-gradient, url(../../images/hero-img.jpg);
+            background-image: $bg-gradient, url(../images/hero-img.jpg);
 
             @include devicePixel_2 {
-                background-image: $bg-gradient, url(../../images/hero-img-2x.jpg);
+                background-image: $bg-gradient, url(../images/hero-img-2x.jpg);
             }
         }
     }
