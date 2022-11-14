@@ -6,9 +6,7 @@
     &__item {
         height: 92px;
 
-        @include mobile {
-            @include widthCalc(2);
-        }
+        @include widthCalc(2);
 
         @include tablet {
             @include widthCalc(3);
