@@ -43,7 +43,9 @@
         margin-bottom: 30px;
         text-align: center;
 
-        width: 360px;
+        @include mobile {
+            width: 360px;
+        }
 
         font-weight: 900;
         font-size: 26px;

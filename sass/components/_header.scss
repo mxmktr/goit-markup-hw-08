@@ -89,26 +89,26 @@
         border: 1px solid $logo-color;
     }
 
-    &::after {
+    &--active::after {
         content: '';
         position: absolute;
         left: 50%;
         bottom: 0;
         transform: translateX(-50%);
 
-        opacity: 0;
+        opacity: 1;
 
         width: 48px;
         height: 4px;
         border-radius: 2px;
 
         background-color: $logo-color;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     }
 
-    &:hover::after {
+    /*    &:hover::after {
         opacity: 1;
-    }
+    } */
 }
 
 .contact-list {

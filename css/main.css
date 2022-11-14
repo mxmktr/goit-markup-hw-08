@@ -339,8 +339,8 @@ textarea {
   height: 100vh;
   z-index: 999;
   background-color: #ffffff;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -360,11 +360,11 @@ textarea {
   padding-bottom: 48px;
   padding-left: 40px;
   min-width: 320px;
+  height: 100vh;
 }
 @media screen and (min-width: 480px) {
   .mobile-menu-wrap {
     width: 480px;
-    height: 100vh;
   }
 }
 
@@ -385,6 +385,9 @@ textarea {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mobile-nav-list__link--active {
+  color: #2196f3;
 }
 
 .mobile-contact-list {
@@ -710,6 +713,9 @@ textarea {
   color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*    &:hover::after {
+      opacity: 1;
+  } */
 }
 .nav-list__link--active {
   color: #2196f3;
@@ -720,23 +726,19 @@ textarea {
 .nav-list__link:active {
   border: 1px solid #2196f3;
 }
-.nav-list__link::after {
+.nav-list__link--active::after {
   content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0;
+  opacity: 1;
   width: 48px;
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-list__link:hover::after {
-  opacity: 1;
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .contact-list {
@@ -838,12 +840,16 @@ textarea {
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
-  width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 162%;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1378,6 +1384,10 @@ textarea {
   font-size: 16px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  /* .form__wrap:hover & {
+      border-color: $logo-color;
+  } */
 }
 .base-input:focus,
 .base-input :valid:required {
@@ -1394,16 +1404,12 @@ textarea {
   fill: #212121;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form__wrap:hover .base-input__icon {
-  fill: #2196f3;
+  /* .form__wrap:hover & {
+      fill: $logo-color;
+  } */
 }
 .base-input:focus + .base-input__icon, .base-input:valid + .base-input__icon {
   fill: #2196f3;
-}
-.form__wrap:hover .base-input {
-  border-color: #2196f3;
-  cursor: pointer;
 }
 
 .textarea {
@@ -1418,9 +1424,9 @@ textarea {
   color: #000000;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.textarea:focus, .textarea:hover {
   cursor: pointer;
+}
+.textarea:focus {
   border-color: #2196f3;
 }
 .textarea::-webkit-input-placeholder {
